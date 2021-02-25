@@ -11,6 +11,7 @@ import ExternalApi from "./views/ExternalApi";
 import AddUserMetadata from "./views/AddUserMetadata";
 import { useAuth0 } from "@auth0/auth0-react";
 import history from "./utils/history";
+import UserForm from "./views/userForm";
 
 // styles
 import "./App.css";
@@ -40,6 +41,7 @@ const App = () => {
             <Route path="/profile" component={Profile} />
             <Route path="/external-api" component={ExternalApi} />
             <Route path="/add-user-metadata" component={AddUserMetadata} />
+            <Route path="/user-form" component={UserForm} />
           </Switch>
         </Container>
         <Footer />
