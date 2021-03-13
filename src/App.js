@@ -12,6 +12,7 @@ import AddUserMetadata from "./views/AddUserMetadata";
 import { useAuth0 } from "@auth0/auth0-react";
 import history from "./utils/history";
 import UserForm from "./views/userForm";
+import ForgetPasswordForm from "./views/forgotPasswordForm";
 
 // styles
 import "./App.css";
@@ -42,6 +43,7 @@ const App = () => {
             <Route path="/external-api" component={ExternalApi} />
             <Route path="/add-user-metadata" component={AddUserMetadata} />
             <Route path="/user-form" component={UserForm} />
+            <Route path="/forget-password-form" component={ForgetPasswordForm} />
           </Switch>
         </Container>
         <Footer />
